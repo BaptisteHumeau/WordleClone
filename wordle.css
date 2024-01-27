@@ -1,0 +1,184 @@
+p1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+p1:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: default;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(120, 244, 255);
+}
+
+body {
+  background-color: #1f1f1f;
+  position: absolute;
+  top: 20%;
+  left:40%;
+  gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.word {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.Letter {
+  color: rgb(162, 162, 162);
+  background-color: rgb(42, 42, 42);
+  height: 50px;
+  font-size: larger;
+  width: 50px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(21, 21, 21);
+}
+
+.Letter:hover {
+  color: rgb(224, 252, 255);
+  box-shadow: 0px 0px 5px rgb(252, 255, 255);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.Letter:active{
+  border: 1px solid rgb(224, 240, 255);
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+}
+
+.user-input{
+    margin: 20px
+}
+
+  input[type="text"] {
+    text-align: center;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f7f7f7;
+    color: #000;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.589);
+    width: 70px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #000000;
+    transform: scale(1.05);
+    width: 100px;
+    box-shadow: 0px 0px 10px rgb(120, 244, 255);
+  }
+  
+  input[type="text"]:hover {
+    background-color: #ffffff;
+    width: 150px;
+    border-color: #ffffff;
+    z-index: 1;
+  }
+  
+  .green {
+    background-color: rgb(34, 74, 34);
+    color : white;
+    text-shadow: 0px 0px 10px rgb(120, 255, 127);
+    z-index: 2;
+    border: 1px solid rgb(120, 255, 127);
+  }
+
+  .green:hover {
+    background-color: rgb(53, 117, 53);
+    box-shadow: 0px 0px 15px rgb(120, 255, 167);
+    border: 1px solid rgb(224, 240, 255);
+  }
+
+  .green:active {
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    background-color: rgb(96, 159, 96);
+    font-weight: bold;
+  }
+
+  .blue {
+    background-color: rgb(30, 51, 96);
+    color : white;
+    text-shadow: 0px 0px 10px rgb(120, 244, 255);
+    z-index: 2;
+  }
+
+  .blue:hover {
+    background-color: rgb(43, 70, 129);
+    box-shadow: 0px 0px 10px rgb(120, 244, 255);
+  text-shadow: 0px 0px 10px rgb(120, 244, 255);
+  z-index: 2;
+  }
+
+  .blue:active {
+    border: 1px solid rgb(224, 240, 255);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  }
+
+  #youLose {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 98%;
+    text-shadow: 0px 0px 20px rgb(255, 140, 0);
+    color: #ffffff;
+
+  }
+
+  #youLose:hover {
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: #bababa;
+    cursor: pointer;
+  }
+
+  #youWin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 98%;
+    text-shadow: 0px 0px 20px rgb(149, 255, 0);
+    color: #ffffff;
+  }
+
+  #youWin:hover {
+    text-shadow: none;
+    color: #b2b2b2;
+    cursor: pointer;
+  }
+
+  .winningRow:hover{
+    box-shadow: 0px 0px 5px rgb(217, 255, 219);
+    background-color: rgb(217, 255, 219);
+    z-index: 2;
+    cursor: pointer;
+  }
